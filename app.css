@@ -101,6 +101,15 @@ header {
   color: var(--white-color);
 }
 
+@media (max-height: 650px) {
+  .choose-game-container {
+    margin-top: 1rem;
+  }
+  .game-container {
+    margin-top: 1.5rem;
+  }
+}
+
 .game {
   display: grid;
   grid-template-columns: repeat(3, 100px);
