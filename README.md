@@ -1,5 +1,10 @@
 # TicTacToe
 
-Tic Tac Toe game with developed with HTML, CSS &amp; JavaScript
+A simple Tic-Tac-Toe game developed with HTML, CSS &amp; JavaScript!
 
-https://tictactoejs-dev.netlify.app/
+Features:
+
+1. Single & Multi player support
+2. Play in dark & light modes
+
+Live: https://tictactoejs-dev.netlify.app/

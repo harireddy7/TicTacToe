@@ -1,0 +1,21 @@
+{
+  "dir": "ltr",
+  "lang": "en",
+  "name": "Tic Tac Toe",
+  "short_name": "Tic Tac Toe",
+  "scope": "/",
+  "display": "standalone",
+  "start_url": "https://tictactoejs-dev.netlify.app/",
+  "background_color": "##120020",
+  "theme_color": "##120020",
+  "description": "Tic-Tac-Toe - A single & multi player game and can be played in dark and light modes made with html, css and javascript!",
+  "orientation": "any",
+  "icons": [
+    {
+      "src": "https://tictactoejs-dev.netlify.app/favicon.png",
+      "type": "image/png",
+      "sizes": "184x184"
+    }
+  ],
+  "url": "https://tictactoejs-dev.netlify.app/"
+}

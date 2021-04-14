@@ -4,7 +4,8 @@ const selectors = {
   gridBoxEl: document.querySelector('.game'),
   resultEl: document.querySelector('.result'),
   playAgainBtn: document.querySelector('.play-again'),
-  themeToggler: document.querySelector('#theme-check')
+  themeToggler: document.querySelector('#theme-check'),
+  chooseGameEl: document.querySelector('#choose-game')
 };
 
 // UI Controller to map UI
