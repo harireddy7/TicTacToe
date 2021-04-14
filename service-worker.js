@@ -1,9 +1,11 @@
 
+const urlsToCache = ['/', '/index.css', 'src/game.js', 'src/ui.js', '/src/app.js']
+
 function preload() {
     console.log('Installing web app');
     return caches.open('offline').then(cache => {
         console.log('caching index and important routes');
-        return cache.addAll(["/", "/offline.html"]);
+        return cache.addAll(urlsToCache);
     });
 }
 
