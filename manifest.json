@@ -12,7 +12,7 @@
   "orientation": "any",
   "icons": [
     {
-      "src": "https://tictactoejs-dev.netlify.app/favicon.png",
+      "src": "https://tictactoejs-dev.netlify.app/assets/icon.png",
       "type": "image/png",
       "sizes": "184x184"
     }
