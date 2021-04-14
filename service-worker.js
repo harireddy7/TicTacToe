@@ -3,7 +3,7 @@ function preload() {
     console.log('Installing web app');
     return caches.open('offline').then(cache => {
         console.log('caching index and important routes');
-        return cache.addAll("/", "/offline.html");
+        return cache.addAll(["/", "/offline.html"]);
     });
 }
 
