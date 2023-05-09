@@ -119,3 +119,5 @@ const GameCtrl = function () {
     }
   };
 };
+
+export default GameCtrl

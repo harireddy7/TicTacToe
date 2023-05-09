@@ -1,4 +1,4 @@
-const selectors = {
+export const selectors = {
   boxesEl: document.querySelectorAll('.box'),
   gameOverEl: document.querySelector('.game-over'),
   gridBoxEl: document.querySelector('.game'),
@@ -51,3 +51,5 @@ const UICtrl = function () {
     }
   };
 };
+
+export default UICtrl

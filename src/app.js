@@ -1,5 +1,8 @@
 // App
 
+import UICtrl, { selectors } from "./UI.js";
+import GameCtrl from "./game.js";
+
 const game = new GameCtrl();
 const ui = new UICtrl();
 
