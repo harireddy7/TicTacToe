@@ -1,6 +1,8 @@
 # TicTacToe
 
-A simple Tic-Tac-Toe game developed with HTML, CSS &amp; JavaScript!
+A simple Tic-Tac-Toe game developed with HTML, CSS, JavaScript &amp; TypeScript
+
+TypeScript branch 👉 [tictactoe/typescript](https://github.com/harireddy7/TicTacToe/tree/typescript)
 
 Features:
 
