@@ -1,10 +1,10 @@
 // App
 
-import UICtrl, { selectors } from "./UI.js";
-import GameCtrl from "./game.js";
+import Game from "./Game/game";
+import UI, { selectors } from "./UI/ui";
 
-const game = new GameCtrl();
-const ui = new UICtrl();
+const game = new Game();
+const ui = new UI();
 
 function checkAndPlaySystem () {
   const { activeTurn, gameType } = game.getGameState();
@@ -15,7 +15,7 @@ function checkAndPlaySystem () {
 
 
 // takes in box number, updates state & renders UI
-function playAndUpdateUI(selectedBox) {
+function playAndUpdateUI(selectedBox: number) {
   const { availableChoices, activeTurn } = game.getGameState();
   if (availableChoices.length > 0 && availableChoices.includes(selectedBox)) {
     // Play & Update UI
@@ -30,13 +30,13 @@ function playAndUpdateUI(selectedBox) {
 
 
 // get random number b/w max & min values
-function getRandomNumber(max, min) {
+function getRandomNumber(max: number, min: number) {
   return Math.floor(Math.random() * (max - min + 1) + min);
 }
 
 
 // get random choice from available choices
-function getRandomChoice(choices = []) {
+function getRandomChoice(choices: number[] = []) {
   const randomNum = getRandomNumber(choices.length - 1, 0)
   return choices[randomNum]
 }
@@ -57,7 +57,7 @@ function initiateGame() {
 
 
 selectors.gridBoxEl.addEventListener('click', function (e) {
-  const { className } = e.target;
+  const { className } = e.target as HTMLElement;
   if (className.includes('box')) {
     const selectedBox = +className.split(' ')[1].slice(-1);
     playAndUpdateUI(selectedBox)
@@ -81,7 +81,7 @@ selectors.themeToggler.addEventListener('click', function () {
 
 
 selectors.chooseGameEl.addEventListener('change', (e) => {
-  const gameType = e.target.value;
+  const gameType = (e.target as HTMLSelectElement).value;
   game.storeGameType(gameType);
   // reset game
   game.restartGame();
